@@ -14,13 +14,13 @@
     font-size: 2em;
 }
 
+.acerca-de-info {
+    grid-column: 5/10;
+    padding: 1em;
+}
+
 .acerca-de img {
     height: 100%;
     width: 80%;
     grid-column: 1/5;    
-}
-
-.acerca-de-info {
-    grid-column: 5/10;
-    padding: 1em;
 }

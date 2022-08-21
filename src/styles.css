@@ -5,3 +5,18 @@
     margin-top: 5px;
     margin-bottom: 35px;
 }
+
+.download-cv {
+    padding: 10px 20px;
+    background-color: aquamarine;
+    border: none;
+    border-radius: 20px;
+    margin-top: 10px;
+    cursor: pointer;
+    box-shadow: 1px 3px 11px -5px rgba(102,231, 200,.69);
+}
+
+.download-cv:hover {
+    background-color: #fff;
+    box-shadow: none;
+}
