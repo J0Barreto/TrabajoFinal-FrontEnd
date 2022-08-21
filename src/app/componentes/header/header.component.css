@@ -1,0 +1,25 @@
+.header {
+    background-color: aqua;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+img {
+    width: 120px;
+    height: 70px;
+}
+
+.social{
+    margin-top: 22px;
+    margin-left: 350px;
+}
+
+.social a{
+    font-size: 30 px;
+    font-style: italic;
+    padding: 15px;
+}
+
+.social i {
+    font-size: 1.6rem;
+}
