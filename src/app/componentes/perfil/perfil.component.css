@@ -1,0 +1,31 @@
+app-perfil {
+    height: 100vh;
+    width: 100vw;
+}
+
+img#banner {
+    width: 100%;
+    height: 150px;
+}
+
+.Perfil {
+    display: flex;
+    justify-content: space-around;
+}
+
+.Perfil img {
+    border-radius: 100%;
+    height: 300px;
+    margin-top: -90px;
+}
+
+.info-content {
+    margin-top: -30px;
+    font-size: medium;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+span {
+    font-size: 1.5em;
+    color: blue;
+}
