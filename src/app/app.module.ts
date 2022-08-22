@@ -25,6 +25,7 @@ import { SkillsComponent } from './componentes/skills/skills.component';
     BrowserModule,
     AppRoutingModule,
     NgCircleProgressModule.forRoot({
+      maxPercent:100,
       radius: 100,
       outerStrokeWidth: 16,
       innerStrokeWidth: 8,
