@@ -1,8 +1,4 @@
-.experiencia {
-    background-color: #ececf0;
-}
-
-.experiencia-cuerpo {
+.estudios-cuerpo {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -10,11 +6,11 @@
     padding: 2em;
 }
 
-.experiencia-cuerpo h2 {
+.estudios-cuerpo h2 {
     font-size: 2.5em;
 }
 
-.experiencia .container {
+.estudios .container {
     height: 70vh;
     margin: 0 auto;
     display: flex;
@@ -36,10 +32,10 @@
     height: auto;
 }
 
-.card1_img {
+.card_img {
     width: 100%;
     height: 150px;
-    background-image: url(../../../assets/img/trabajos.jpg);
+    background-image: url(../../../assets/img/estudios.jpg);
     background-size: cover;
 }
 
@@ -50,18 +46,18 @@
     color: black;
 }
 
-.experiencia__links {
+.estudios__links {
     display: flex;
     justify-content: space-evenly;
     background-color: grey;
 }
 
-.experiencia__links a {
+.estudios__links a {
     color: #fff;
     text-decoration: none;
 }
 
-.experiencia__links i {
+.estudios__links i {
     font-size: 1em;
     color:black;
 }
