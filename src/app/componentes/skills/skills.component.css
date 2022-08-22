@@ -1,0 +1,17 @@
+.habilidades {
+    padding: 2em;
+}
+
+.habilidades h2 {
+    font-size: 2.5em;
+}
+
+.progreso {
+    display: flex;
+    justify-content: space-between;
+    padding: 25px;
+}
+
+.progreso p {
+    text-align: center;
+}
