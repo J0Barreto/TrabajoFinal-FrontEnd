@@ -10,7 +10,7 @@ import { ExperienciaComponent } from './componentes/experiencia/experiencia.comp
 import { EstudiosComponent } from './componentes/estudios/estudios.component';
 import { NgCircleProgressModule } from 'ng-circle-progress';
 import { SkillsComponent } from './componentes/skills/skills.component';
-import { ProyectosComponent } from './complementos/proyectos/proyectos.component';
+import { ProyectosComponent } from './componentes/proyectos/proyectos.component';
 
 @NgModule({
   declarations: [
