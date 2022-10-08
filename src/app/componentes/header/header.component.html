@@ -9,6 +9,7 @@
             <a href="https://www.instagram.com/chichobarreto/"><i class="fab fa-instagram"></i></a>
     </div>
     <div class="button">
-        <input class="btn btn-primary" type="button" value="Iniciar Sesión" (click)="login()">
+        <input class="btn btn-primary" type="button" value="Iniciar Sesión" (click)="login()" *ngIf="!isLogged">
+        <input class="btn btn-primary" type="button" value="Cerrar Sesión" (click)="onLogOut()" *ngIf="isLogged">
     </div>
 </div>
