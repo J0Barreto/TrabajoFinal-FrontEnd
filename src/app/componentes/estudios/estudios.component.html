@@ -1,22 +1,24 @@
 <div class="estudios">
     <div class="estudios-cuerpo">
         <h2>Estudios</h2>
+        <button type="button" class="btn btn-dark" routerLink="/nuevoest" *ngIf="isLogged">Nuevo estudio</button>
         <div class="divider"></div>
     </div>
-    <div class="container">
+    <div class="container" *ngFor="let Estudios of estudios">
         <ul class="item-list">
             <li class="cards">
                 <div class="card">
                     <div class="card_img">
                     </div>
                     <div class="card__titulo">
-                        <h3>Titulo</h3>
+                        <h3>{{Estudios.nombreE}}</h3>
                         <br>
-                        <p>Descripcion</p>
+                        <p>{{Estudios.descripcionE}}</p>
                         <p>desde-hasta</p>
                     </div>
-                    <div class="estudios__links">
-                        <a href="#"><i class="fas fa-book"></i> </a>
+                    <div class="estudios__links" *ngIf="isLogged">
+                        <button class="btn btn-secondary" routerLink="/editest/{{Estudios.id}}"><i class="bi bi-pencil"></i></button>
+                        <button class="btn btn-secondary" (click)="delete(Estudios.id)"><i class="bi bi-x"></i></button>
                     </div>
                 </div>
             </li>
