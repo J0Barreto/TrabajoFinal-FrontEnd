@@ -1,18 +1,14 @@
 <div class="habilidades">
     <h2>Habilidades</h2>
+    <button type="button" class="btn btn-dark" routerLink="/newskill" *ngIf="isLogged">Nueva Skill</button>
     <div class="divider"></div>
 </div>
-<div class="progreso">
-    <div class="html">
-    <circle-progress [percent]="85" [subtitle]="'HTML'" [subtitleFontSize]="'1.5em'"></circle-progress>
+<div class="progreso" *ngFor="let skills of skills">
+    <div class="skill">
+    <circle-progress [percent]="(skills.porcentaje)" [subtitle]="(skills.nombre)" [subtitleFontSize]="'1.5em'"></circle-progress>
     </div>
-    <div class="css">
-    <circle-progress [percent]="80" [subtitle]="'CSS'" [subtitleFontSize]="'1.5em'"></circle-progress>
-    </div>
-    <div class="java">
-    <circle-progress [percent]="70" [subtitle]="'JAVA'" [subtitleFontSize]="'1.5em'"></circle-progress>
-    </div>
-    <div class="angular">
-    <circle-progress [percent]="75" [subtitle]="'ANGULAR'" [subtitleFontSize]="'1.5em'"></circle-progress>
+    <div class="experiencia__links" *ngIf="isLogged">
+        <button class="btn btn-secondary" routerLink="/editskills/{{skills.id}}"><i class="bi bi-pencil"></i></button>
+        <button class="btn btn-secondary" (click)="delete(skills.id)"><i class="bi bi-x"></i></button>
     </div>
 </div>
